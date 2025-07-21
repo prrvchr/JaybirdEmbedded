@@ -48,7 +48,7 @@ public class FirebirdEmbeddedProvider
             String entry = null;
             switch (Platform.getOSType()) {
                 case Platform.LINUX:
-                    entry = Platform.RESOURCE_PREFIX + "/libfbclient.so";
+                    entry = Platform.RESOURCE_PREFIX + "/lib/libfbclient.so";
                     break;
                 case Platform.WINDOWS:
                     entry = Platform.RESOURCE_PREFIX + "/fbclient.dll";
@@ -67,9 +67,9 @@ public class FirebirdEmbeddedProvider
                                               Platform.RESOURCE_PREFIX + "/plugins/libEngine13.so",
                                               Platform.RESOURCE_PREFIX + "/plugins/udr_engine.conf",
                                               Platform.RESOURCE_PREFIX + "/plugins/libudr_engine.so",
-                                              Platform.RESOURCE_PREFIX + "/libfbclient.so",
-                                              Platform.RESOURCE_PREFIX + "/libib_util.so",
-                                              Platform.RESOURCE_PREFIX + "/libtomcrypt.so",
+                                              Platform.RESOURCE_PREFIX + "/lib/libfbclient.so",
+                                              Platform.RESOURCE_PREFIX + "/lib/libib_util.so",
+                                              Platform.RESOURCE_PREFIX + "/lib/libtomcrypt.so",
                                               Platform.RESOURCE_PREFIX + "/firebird.conf",
                                               Platform.RESOURCE_PREFIX + "/firebird.msg",
                                               Platform.RESOURCE_PREFIX + "/plugins.conf");
