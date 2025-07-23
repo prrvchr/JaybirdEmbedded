@@ -1,0 +1,18 @@
+namespace: JaybirdEmbedded
+
+output:
+  file_path: ./Fluid-Attacks-Results.csv
+  format: CSV
+
+working_dir: .
+
+sast:
+  include:
+    - glob(source/JaybirdEmbedded/source/*.java)
+
+sca:
+  include:
+    - .
+
+language: EN
+strict: true
