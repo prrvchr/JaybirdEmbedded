@@ -15,10 +15,11 @@ public class FirebirdEmbeddedProvider
         implements org.firebirdsql.jna.embedded.spi.FirebirdEmbeddedProvider {
 
     private static final String SERVER_VERSION = "V5.0.3.16830 Firebird 5.0";
+    private static final String PREFIX = Platform.RESOURCE_PREFIX;
 
     @Override
     public String getPlatform() {
-        return Platform.RESOURCE_PREFIX;
+        return PREFIX;
     }
 
     @Override
@@ -48,10 +49,10 @@ public class FirebirdEmbeddedProvider
             String entry = null;
             switch (Platform.getOSType()) {
                 case Platform.LINUX:
-                    entry = Platform.RESOURCE_PREFIX + "/lib/libfbclient.so";
+                    entry = PREFIX + "/lib/libfbclient.so";
                     break;
                 case Platform.WINDOWS:
-                    entry = Platform.RESOURCE_PREFIX + "/fbclient.dll";
+                    entry = PREFIX + "/fbclient.dll";
                     break;
             }
             return entry;
@@ -62,33 +63,40 @@ public class FirebirdEmbeddedProvider
             List<String> resources = null;
             switch (Platform.getOSType()) {
                 case Platform.LINUX:
-                    resources = Arrays.asList(Platform.RESOURCE_PREFIX + "/intl/fbintl.conf",
-                                              Platform.RESOURCE_PREFIX + "/intl/fbintl",
-                                              Platform.RESOURCE_PREFIX + "/plugins/libEngine13.so",
-                                              Platform.RESOURCE_PREFIX + "/plugins/udr_engine.conf",
-                                              Platform.RESOURCE_PREFIX + "/plugins/libudr_engine.so",
-                                              Platform.RESOURCE_PREFIX + "/lib/libfbclient.so",
-                                              Platform.RESOURCE_PREFIX + "/lib/libib_util.so",
-                                              Platform.RESOURCE_PREFIX + "/lib/libtomcrypt.so",
-                                              Platform.RESOURCE_PREFIX + "/firebird.conf",
-                                              Platform.RESOURCE_PREFIX + "/firebird.msg",
-                                              Platform.RESOURCE_PREFIX + "/plugins.conf");
+                    resources = Arrays.asList(PREFIX + "/intl/fbintl.conf",
+                                              PREFIX + "/intl/fbintl",
+                                              PREFIX + "/lib/libfbclient.so",
+                                              PREFIX + "/lib/libfbclient.so.2",
+                                              PREFIX + "/lib/libfbclient.so.5.0.3",
+                                              PREFIX + "/lib/libib_util.so",
+                                              PREFIX + "/lib/libtomcrypt.so",
+                                              PREFIX + "/lib/libtomcrypt.so.1",
+                                              PREFIX + "/lib/libtomcrypt.so.1.0.1",
+                                              PREFIX + "/lib/libtommath.so",
+                                              PREFIX + "/lib/libtommath.so.0.0.41",
+                                              PREFIX + "/lib/libtommath.so.1",
+                                              PREFIX + "/plugins/libEngine13.so",
+                                              PREFIX + "/plugins/libudr_engine.so",
+                                              PREFIX + "/plugins/udr_engine.conf",
+                                              PREFIX + "/firebird.conf",
+                                              PREFIX + "/firebird.msg",
+                                              PREFIX + "/plugins.conf");
                     break;
                 case Platform.WINDOWS:
-                    resources = Arrays.asList(Platform.RESOURCE_PREFIX + "/intl/fbintl.conf",
-                                              Platform.RESOURCE_PREFIX + "/intl/fbintl.dll",
-                                              Platform.RESOURCE_PREFIX + "/plugins/engine13.dll",
-                                              Platform.RESOURCE_PREFIX + "/plugins/udr_engine.conf",
-                                              Platform.RESOURCE_PREFIX + "/plugins/udr_engine.dll",
-                                              Platform.RESOURCE_PREFIX + "/fbclient.dll",
-                                              Platform.RESOURCE_PREFIX + "/firebird.conf",
-                                              Platform.RESOURCE_PREFIX + "/firebird.msg",
-                                              Platform.RESOURCE_PREFIX + "/ib_util.dll",
-                                              Platform.RESOURCE_PREFIX + "/icudt63.dll",
-                                              Platform.RESOURCE_PREFIX + "/icudt63l.dat",
-                                              Platform.RESOURCE_PREFIX + "/icuin63.dll",
-                                              Platform.RESOURCE_PREFIX + "/icuuc63.dll",
-                                              Platform.RESOURCE_PREFIX + "/plugins.conf");
+                    resources = Arrays.asList(PREFIX + "/intl/fbintl.conf",
+                                              PREFIX + "/intl/fbintl.dll",
+                                              PREFIX + "/plugins/engine13.dll",
+                                              PREFIX + "/plugins/udr_engine.conf",
+                                              PREFIX + "/plugins/udr_engine.dll",
+                                              PREFIX + "/fbclient.dll",
+                                              PREFIX + "/firebird.conf",
+                                              PREFIX + "/firebird.msg",
+                                              PREFIX + "/ib_util.dll",
+                                              PREFIX + "/icudt63.dll",
+                                              PREFIX + "/icudt63l.dat",
+                                              PREFIX + "/icuin63.dll",
+                                              PREFIX + "/icuuc63.dll",
+                                              PREFIX + "/plugins.conf");
                     break;
             }
             return resources;

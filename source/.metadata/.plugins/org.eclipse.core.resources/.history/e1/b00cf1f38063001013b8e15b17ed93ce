@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module FirebirdEmbeddedProvider {
-	requires org.firebirdsql.jna;
-}

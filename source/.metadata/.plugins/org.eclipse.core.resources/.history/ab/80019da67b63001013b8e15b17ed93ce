@@ -1,5 +1,0 @@
-package io.github.prrvchr.firebird_5_0_3;
-
-public class FirebirdEmbeddedProvider {
-
-}
