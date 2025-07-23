@@ -8,7 +8,7 @@ favicon: true
 logo: /img/jaybird.svg
 email: prrvchr@gmail.com
 google_analytics: G-YG4NJNDW9K
-title: JaybirdEmbedded
+title: Jaybird Embedded
 blank_title: true
 description: The latest version of Firebird server in a single jar file.
 sidebar:
