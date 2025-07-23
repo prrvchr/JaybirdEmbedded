@@ -52,7 +52,8 @@ ___
 
 ## Use:
 
-In order to be functional, the loading of the JaybirdEmbedded archive must be done by the classloader, or a lower-level classloader, which will load the Jaybird JDBC driver.
+To be functional, the JaybirdEmbedded archive must be loaded by the system classloader or added to the classpath.  
+This limitation may soon be lifted, allowing the JaybirdEmbedded archive to be loaded by the Jaybird JDBC driver classloader or a parent classloader.
 
 ___
 

@@ -52,7 +52,8 @@ ___
 
 ## Utilisation:
 
-Pour être fonctionnel, le chargement de l'archive JaybirdEmbedded doit être effectué par le classloader, ou un classloader de niveau inférieur, qui chargera le pilote JDBC Jaybird.
+Pour être fonctionnelle, l'archive JaybirdEmbedded doit être chargée par le chargeur de classe système ou ajoutée au classpath.  
+Cette limitation pourrait bientôt être levée, permettant ainsi le chargement de l'archive JaybirdEmbedded par le chargeur de classe du pilote JDBC Jaybird ou par un chargeur de classe parent.
 
 ___
 
