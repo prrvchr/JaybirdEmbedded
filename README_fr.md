@@ -61,7 +61,7 @@ ___
 
 ### Ce qui a été fait pour la version 1.0.0:
 
-- Tout d'abord je tiens à remercier [Mark Rotteveel][10] pour pour m'avoir fourni toutes les informations nécessaires pour pouvoir réaliser ce service SPI.
+- Tout d'abord je tiens à remercier [Mark Rotteveel][10] pour m'avoir fourni toutes les informations nécessaires pour pouvoir réaliser ce service SPI.
 - Seules les [architectures][11] `win32-x86-64` et `linux-x86-64` sont fournie par l'archive. Si des utilisateurs veulent voir d'autres architectures embarquée dans l'archive qu'il se fasse connaitre en ouvrant une [issue][9].
 
 ### Que reste-t-il à faire pour la version 1.0.0:
