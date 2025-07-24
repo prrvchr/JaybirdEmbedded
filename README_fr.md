@@ -50,6 +50,12 @@ L'archive JaybirdEmbedded nécessite Java 17 ou supérieur pour fonctionner.
 
 ___
 
+## Installation:
+
+- ![JaybirdEmbedded logo][10] Télécharger **[JaybirdEmbedded.jar][11]** [![Version][12]][11]
+
+___
+
 ## Utilisation:
 
 Pour être fonctionnelle, l'archive JaybirdEmbedded doit être chargée par le chargeur de classe système ou ajoutée au classpath.  
@@ -61,8 +67,8 @@ ___
 
 ### Ce qui a été fait pour la version 1.0.0:
 
-- Tout d'abord je tiens à remercier [Mark Rotteveel][10] pour m'avoir fourni toutes les informations nécessaires pour pouvoir réaliser ce service SPI.
-- Seules les [architectures][11] `win32-x86-64` et `linux-x86-64` sont fournie par l'archive. Si des utilisateurs veulent voir d'autres architectures embarquée dans l'archive qu'il se fasse connaitre en ouvrant une [issue][9].
+- Tout d'abord je tiens à remercier [Mark Rotteveel][13] pour m'avoir fourni toutes les informations nécessaires pour pouvoir réaliser ce service SPI.
+- Seules les [architectures][14] `win32-x86-64` et `linux-x86-64` sont fournie par l'archive. Si des utilisateurs veulent voir d'autres architectures embarquée dans l'archive qu'il se fasse connaitre en ouvrant une [issue][9].
 
 ### Que reste-t-il à faire pour la version 1.0.0:
 
@@ -79,6 +85,8 @@ ___
 [7]: <https://firebirdsql.org/en/jdbc-driver/>
 [8]: <https://github.com/prrvchr/JaybirdEmbedded/>
 [9]: <https://github.com/prrvchr/JaybirdEmbedded/issues/new>
-[10]: <https://github.com/mrotteveel>
-[11]: <https://github.com/java-native-access/jna/blob/master/src/com/sun/jna/Platform.java#L66>
-
+[10]: <img/JaybirdOOo.svg#middle>
+[11]: <https://github.com/prrvchr/JaybirdEmbedded/releases/latest/download/JaybirdEmbedded.jar>
+[12]: <https://img.shields.io/github/downloads/prrvchr/JaybirdEmbedded/latest/total?label=v1.0.0#right>
+[13]: <https://github.com/mrotteveel>
+[14]: <https://github.com/java-native-access/jna/blob/master/src/com/sun/jna/Platform.java#L66>
