@@ -31,13 +31,15 @@
 
 ## Introduction:
 
-**JaybirdEmbedded** est une archive Java fournissant des [services Java SPI][5] capables de délivrer les fichiers binaires [Firebird 5.0.3 Server][6] pour les architectures Windows 64 bits et/ou Linux 64 bits x86 au [pilote JDBC Jaybird][7] utilisant ce service SPI.  
+L'archive **JaybirdEmbedded** fait partie d'une [Série][5] d'applications nous permettant de vous proposer des services innovants en logiciels libres.
+
+**JaybirdEmbedded** est une archive Java fournissant des [services Java SPI][6] capables de délivrer les fichiers binaires [Firebird 5.0.3 Server][7] pour les architectures Windows 64 bits et/ou Linux 64 bits x86 au [pilote JDBC Jaybird][8] utilisant ce service SPI.  
 Elle permet au pilote JDBC Jaybird de fonctionner en mode véritablement intégré.
 
 Etant un logiciel libre je vous encourage:
-- A dupliquer son [code source][8].
+- A dupliquer son [code source][9].
 - A apporter des modifications, des corrections, des améliorations.
-- D'ouvrir un [dysfonctionnement][9] si nécessaire.
+- D'ouvrir un [dysfonctionnement][10] si nécessaire.
 
 Bref, à participer au developpement de cette extension.  
 Car c'est ensemble que nous pouvons rendre le Logiciel Libre plus intelligent.
@@ -52,7 +54,7 @@ ___
 
 ## Installation:
 
-- ![JaybirdEmbedded logo][10] Télécharger **[JaybirdEmbedded.jar][11]** [![Version][12]][11]
+- ![JaybirdEmbedded logo][11] Télécharger **[JaybirdEmbedded.jar][12]** [![Version][13]][12]
 
 ___
 
@@ -67,8 +69,8 @@ ___
 
 ### Ce qui a été fait pour la version 1.0.0:
 
-- Tout d'abord je tiens à remercier [Mark Rotteveel][13] pour m'avoir fourni toutes les informations nécessaires pour pouvoir réaliser ce service SPI.
-- Seules les [architectures][14] `win32-x86-64` et `linux-x86-64` sont fournie par l'archive. Si des utilisateurs veulent voir d'autres architectures embarquée dans l'archive qu'il se fasse connaitre en ouvrant une [issue][9].
+- Tout d'abord je tiens à remercier [Mark Rotteveel][14] pour m'avoir fourni toutes les informations nécessaires pour pouvoir réaliser ce service SPI.
+- Seules les [architectures][15] `win32-x86-64` et `linux-x86-64` sont fournie par l'archive. Si des utilisateurs veulent voir d'autres architectures embarquée dans l'archive qu'il se fasse connaitre en ouvrant une [issue][10].
 
 ### Que reste-t-il à faire pour la version 1.0.0:
 
@@ -80,13 +82,14 @@ ___
 [2]: <https://prrvchr.github.io/JaybirdEmbedded/>
 [3]: <https://prrvchr.github.io/JaybirdEmbedded/>
 [4]: <https://prrvchr.github.io/JaybirdEmbedded/README_fr#ce-qui-a-%C3%A9t%C3%A9-fait-pour-la-version-100>
-[5]: <https://docs.oracle.com/javase/tutorial/sound/SPI-intro.html>
-[6]: <https://www.firebirdsql.org/en/firebird-5-0-3>
-[7]: <https://firebirdsql.org/en/jdbc-driver/>
-[8]: <https://github.com/prrvchr/JaybirdEmbedded/>
-[9]: <https://github.com/prrvchr/JaybirdEmbedded/issues/new>
-[10]: <img/JaybirdOOo.svg#middle>
-[11]: <https://github.com/prrvchr/JaybirdEmbedded/releases/latest/download/JaybirdEmbedded.jar>
-[12]: <https://img.shields.io/github/downloads/prrvchr/JaybirdEmbedded/latest/total?label=v1.0.0#right>
-[13]: <https://github.com/mrotteveel>
-[14]: <https://github.com/java-native-access/jna/blob/master/src/com/sun/jna/Platform.java#L66>
+[5]: <https://prrvchr.github.io/README_fr>
+[6]: <https://docs.oracle.com/javase/tutorial/sound/SPI-intro.html>
+[7]: <https://www.firebirdsql.org/en/firebird-5-0-3>
+[8]: <https://firebirdsql.org/en/jdbc-driver/>
+[9]: <https://github.com/prrvchr/JaybirdEmbedded/>
+[10]: <https://github.com/prrvchr/JaybirdEmbedded/issues/new>
+[11]: <img/JaybirdOOo.svg#middle>
+[12]: <https://github.com/prrvchr/JaybirdEmbedded/releases/latest/download/JaybirdEmbedded.jar>
+[13]: <https://img.shields.io/github/downloads/prrvchr/JaybirdEmbedded/latest/total?label=v1.0.0#right>
+[14]: <https://github.com/mrotteveel>
+[15]: <https://github.com/java-native-access/jna/blob/master/src/com/sun/jna/Platform.java#L66>
